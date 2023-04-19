@@ -572,6 +572,10 @@ select {
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
+  /*擴充專案的全站樣式*/
+  html {
+    font-family: Noto Sans TC, system-ui, sans-serif;
+  }
 
 *, ::before, ::after {
   --tw-translate-x: 0;
@@ -617,12 +621,20 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+/*自組元件*/
 .contents {
   display: contents;
 }
+.font-azeret {
+  font-family: "Azeret Mono";
+}
 .text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 28px;
+  line-height: 40px;
+}
+.text-5xl {
+  font-size: 48px;
+  line-height: 70px;
 }
 .font-bold {
   font-weight: 700;
@@ -631,7 +643,12 @@ select {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(98 219 84 / var(--tw-text-opacity));
+}
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+/*自組樣式*/
