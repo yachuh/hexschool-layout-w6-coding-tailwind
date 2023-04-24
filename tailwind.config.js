@@ -24,12 +24,18 @@ module.exports = {
       colors: {
         transparent: "transparent",
         primary: "#62DB54", // 綠色
-        black: {
+        secondary: "#09ACF5", // 藍色
+        dark: {
           primary: "#1C1C1C", // 黑色, 主要背景
           secondary: "#2D2D2D", //深灰色, 次要背景
         },
+        black: "#000000",
       },
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };
