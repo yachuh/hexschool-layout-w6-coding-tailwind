@@ -9,17 +9,43 @@
   }
   body {
     color: white;
-    background-color: black;
   }
   a {
-    display: block;
+    @apply block;
   }
 }
 
 @layer components {
   /*自組元件*/
+  .btn {
+    @apply inline-block text-md rounded-lg px-8 py-2 cursor-pointer transition-all hover:scale-105;
+  }
+  .btn-gradient {
+    background: linear-gradient(104deg, #09acf5, #62db54);
+  }
+  .btn-outline {
+    @apply ring ring-inset ring-white bg-transparent;
+  }
+  .hr-white {
+    @apply relative pb-4 after:w-[50px] after:h-[3px] after:bg-white after:absolute after:bottom-0 after:left-[50%] after:-translate-x-1/2 md:after:left-0 md:after:translate-x-0;
+  }
+  .hr-primary {
+    @apply relative pb-4 after:w-[50px] after:h-[3px] after:bg-primary after:absolute after:bottom-0 after:left-[50%] after:-translate-x-1/2 md:after:left-0 md:after:translate-x-0;
+  }
 }
 
 @layer utilities {
   /*自組樣式*/
+  .text-gradient {
+    color: transparent;
+    background: linear-gradient(180deg, #09acf5, #62db54);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .absoluteCenter {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
