@@ -24,7 +24,7 @@
     background: linear-gradient(104deg, #09acf5, #62db54);
   }
   .btn-outline {
-    @apply ring ring-inset ring-white bg-transparent;
+    @apply ring-1 ring-inset ring-white bg-transparent hover:ring-primary hover:text-primary;
   }
   .hr-white {
     @apply relative pb-4 after:w-[50px] after:h-[3px] after:bg-white after:absolute after:bottom-0 after:left-[50%] after:-translate-x-1/2 md:after:left-0 md:after:translate-x-0;
