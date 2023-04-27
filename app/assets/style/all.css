@@ -17,18 +17,24 @@
 
 @layer components {
   /*自組元件*/
+  /* --- button ---*/
   .btn {
     @apply inline-block text-md rounded-lg px-8 py-2 cursor-pointer transition-all hover:scale-105;
   }
+
   .btn-gradient {
     background: linear-gradient(104deg, #09acf5, #62db54);
   }
+
   .btn-outline {
-    @apply ring-1 ring-inset ring-white bg-transparent hover:ring-primary hover:text-primary;
+    @apply ring-1 ring-inset ring-white bg-transparent hover:ring-primary hover:text-primary hover:scale-100;
   }
+
+  /* --- hr --- */
   .hr-white {
     @apply relative pb-4 after:w-[50px] after:h-[3px] after:bg-white after:absolute after:bottom-0 after:left-[50%] after:-translate-x-1/2 md:after:left-0 md:after:translate-x-0;
   }
+
   .hr-primary {
     @apply relative pb-4 after:w-[50px] after:h-[3px] after:bg-primary after:absolute after:bottom-0 after:left-[50%] after:-translate-x-1/2 md:after:left-0 md:after:translate-x-0;
   }
@@ -42,10 +48,33 @@
     background-clip: text;
     -webkit-background-clip: text;
   }
+
   .absoluteCenter {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+
+  /* swiper */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: auto;
+    text-align: center;
+    font-size: inherit;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
 }
