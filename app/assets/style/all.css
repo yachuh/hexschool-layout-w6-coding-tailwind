@@ -62,19 +62,51 @@
     height: 100%;
   }
 
-  .swiper-slide {
-    width: auto;
+  /* course-swiper */
+  .course-swiper .swiper-slide {
+    width: auto; /*make width fit content*/
     text-align: center;
     font-size: inherit;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
   }
 
-  /* .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */
+  /* review-swiper */
+  .review-swiper .swiper-button-next:after,
+  .review-swiper .swiper-button-prev:after {
+    content: "";
+  }
+
+  .review-swiper .swiper-button-next,
+  .review-swiper .swiper-button-prev {
+    position: unset;
+    margin-top: 0;
+  }
+
+  .review-swiper .swiper-pagination {
+    position: unset;
+    width: auto;
+  }
+
+  .review-swiper .swiper-pagination-bullet {
+    opacity: initial;
+    background: #62db54;
+  }
+
+  .review-swiper .swiper-pagination-bullet-active {
+    width: 16px;
+    border-radius: 100px;
+  }
+
+  .review-swiper .swiper-buttons {
+    position: initial;
+    transform: none;
+  }
+  @media (min-width: 960px) {
+    .review-swiper .swiper-buttons {
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+  }
 }
