@@ -1104,8 +1104,8 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/assets\/images\/bg_home_mobile\.jpg\'\)\] {
-  background-image: url('/assets/images/bg_home_mobile.jpg');
+.bg-\[url\(\'\.\/assets\/images\/bg_home_mobile\.jpg\'\)\] {
+  background-image: url('./assets/images/bg_home_mobile.jpg');
 }
 .bg-gradient-to-b {
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops)));
@@ -1124,8 +1124,8 @@ select {
 .bg-\[url\(\'\/assets\/images\/info04\.jpg\'\)\] {
   background-image: url('/assets/images/info04.jpg');
 }
-.bg-\[url\(\'\/assets\/images\/logo2\.svg\'\)\] {
-  background-image: url('/assets/images/logo2.svg');
+.bg-\[url\(\'\.\/assets\/images\/logo2\.svg\'\)\] {
+  background-image: url('./assets/images/logo2.svg');
 }
 .from-secondary {
   --tw-gradient-from: #09ACF5;
@@ -1623,11 +1623,11 @@ select {
   .md\:bg-inherit {
     background-color: inherit;
   }
-  .md\:bg-\[url\(\'\/assets\/images\/bg_home\.jpg\'\)\] {
-    background-image: url('/assets/images/bg_home.jpg');
+  .md\:bg-\[url\(\'\.\/assets\/images\/bg_home\.jpg\'\)\] {
+    background-image: url('./assets/images/bg_home.jpg');
   }
-  .md\:bg-\[url\(\'\/assets\/images\/logo\.svg\'\)\] {
-    background-image: url('/assets/images/logo.svg');
+  .md\:bg-\[url\(\'\.\/assets\/images\/logo\.svg\'\)\] {
+    background-image: url('./assets/images/logo.svg');
   }
   .md\:p-20 {
     padding: 5rem;
