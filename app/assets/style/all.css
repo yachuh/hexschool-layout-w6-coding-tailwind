@@ -38,6 +38,11 @@
   .hr-primary {
     @apply relative pb-4 after:w-[50px] after:h-[3px] after:bg-primary after:absolute after:bottom-0 after:left-[50%] after:-translate-x-1/2 md:after:left-0 md:after:translate-x-0;
   }
+
+  /* input */
+  .input {
+    @apply w-full bg-dark-primary rounded border-white px-4 py-2 focus:border-primary focus:ring-0;
+  }
 }
 
 @layer utilities {
