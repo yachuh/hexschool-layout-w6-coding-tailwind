@@ -52,3 +52,22 @@ const swiperCustomer = new Swiper(".review-swiper", {
     clickable: true,
   },
 });
+
+// login Modal
+const loginModal = document.getElementById("loginModal");
+const loginBtn = document.getElementById("btn-login");
+const closeBtn = document.getElementById("btn-close");
+const body = document.querySelector("body");
+
+const toggleLoginModal = () => {
+  loginModal.classList.toggle("hidden");
+
+  // Make body unscrollable when modal is opened
+  if (!loginModal.classList.contains("hidden")) {
+    // Disable scroll
+    body.style.overflow = "hidden";
+  } else {
+    // Enable scroll
+    body.style.overflow = "auto";
+  }
+};
