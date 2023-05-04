@@ -46,5 +46,22 @@ var swiperCustomer = new Swiper(".review-swiper", {
     el: ".swiper-pagination",
     clickable: true
   }
-});
+}); // login Modal
+
+var loginModal = document.getElementById("loginModal");
+var loginBtn = document.getElementById("btn-login");
+var closeBtn = document.getElementById("btn-close");
+var body = document.querySelector("body");
+
+var toggleLoginModal = function toggleLoginModal() {
+  loginModal.classList.toggle("hidden"); // Make body unscrollable when modal is opened
+
+  if (!loginModal.classList.contains("hidden")) {
+    // Disable scroll
+    body.style.overflow = "hidden";
+  } else {
+    // Enable scroll
+    body.style.overflow = "auto";
+  }
+};
 //# sourceMappingURL=all.js.map

@@ -26,6 +26,102 @@
   </head>
 
   <body>
+    <!-- Login modal -->
+    <div
+      class="relative z-[1000] hidden"
+      id="loginModal"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+      aria-modal="true"
+      role="loginModel"
+    >
+      <!-- Modal Overlay -->
+      <div
+        class="fixed w-full h-full inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+      ></div>
+      <!-- Modal Main -->
+      <div class="fixed inset-0 z-[1010] overflow-y-auto">
+        <div
+          class="flex min-h-full container items-center justify-center p-4 text-center"
+        >
+          <div
+            class="relative w-full lg:w-1/2 transform overflow-hidden bg-dark-secondary text-left shadow-xl transition-all px-6 py-10 lg:px-[150px] lg:py-6 border border-white"
+          >
+            <!-- Close button -->
+            <span
+              class="absolute material-icons top-4 lg:top-[30px] right-6 cursor-pointer"
+              id="btn-close"
+              aria-label="Close"
+              onClick="toggleLoginModal()"
+              >close</span
+            >
+            <!-- Modal title -->
+            <div class="mb-6 lg:mb-8">
+              <h2 class="text-2xl font-bold text-center">登入</h2>
+            </div>
+            <!-- Modal body -->
+            <div>
+              <form action="" class="mb-6 lg:mb-12">
+                <div class="mb-4 text-[#C1C1C1]">
+                  <label for="email">信箱</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="請輸入電子信箱"
+                    class="input mt-[6px]"
+                    required
+                  />
+                </div>
+                <div class="mb-4 text-[#C1C1C1]">
+                  <label for="password">密碼</label>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="請輸入密碼"
+                    class="input mt-[6px]"
+                    required
+                  />
+                </div>
+                <a
+                  type="button"
+                  class="btn btn-gradient w-full text-white text-center hover:scale-100"
+                  >登入</a
+                >
+              </form>
+              <div class="text-center text-white">
+                <h3
+                  class="relative z-10 flex items-center justify-center mb-4 before:absolute before:-z-10 before:h-px before:w-full before:bg-[#C1C1C1]"
+                >
+                  <span class="bg-dark-secondary px-4 text-[#c1c1c1]"
+                    >其他登入方式</span
+                  >
+                </h3>
+                <a
+                  href=""
+                  class="btn btn-outline w-full flex items-center justify-center mb-4 lg:mb-6"
+                  ><img
+                    src="./assets/images/icon_fb.svg"
+                    alt="icon_fb"
+                    class="w-6 mr-8 lg:mr-[58px]"
+                  />
+                  Facebook 登入</a
+                >
+                <a
+                  href=""
+                  class="btn btn-outline w-full flex items-center justify-center lg:mb-6"
+                  ><img
+                    src="./assets/images/icon_google.svg"
+                    alt="icon_fb"
+                    class="w-6 mr-8 lg:mr-[58px]"
+                  />
+                  Google 登入</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- header -->
     <header class="bg-dark-secondary">
       <div class="container flex justify-between py-6 relative">
@@ -41,7 +137,10 @@
         <nav class="hidden justify-end items-center md:flex">
           <a href="index.html" class="px-6 hover:opacity-50">首頁</a>
           <a href="course.html" class="px-6 hover:opacity-50">課程介紹</a>
-          <a href="index.html" class="px-6 hover:opacity-50"
+          <a
+            class="px-6 hover:opacity-50 cursor-pointer"
+            id="btn-login"
+            onClick="toggleLoginModal()"
             ><span class="material-icons mr-1.5 align-bottom"
               >account_circle</span
             >登入</a
@@ -61,7 +160,10 @@
           <nav class="container p-3 text-center">
             <a href="index.html" class="text-md py-3">首頁</a>
             <a href="course.html" class="text-md py-3">課程介紹</a>
-            <a href="index.html" class="text-md py-3"
+            <a
+              class="text-md py-3 cursor-pointer"
+              id="btn-login"
+              onClick="toggleLoginModal()"
               ><span class="material-icons mr-1.5 align-bottom"
                 >account_circle</span
               >登入</a
