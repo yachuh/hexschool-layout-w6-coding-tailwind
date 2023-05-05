@@ -29,6 +29,7 @@ module.exports = {
           primary: "#1C1C1C", // 黑色, 主要背景
           secondary: "#2D2D2D", //深灰色, 次要背景
           text: "#494755", // 深灰色, 文字
+          border: "#C1C1C1", // 淺灰色, border
         },
         black: "#000000",
       },
