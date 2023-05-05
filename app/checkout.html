@@ -124,19 +124,23 @@ engine: ejs
               </div>
             </div>
             <div class="mb-4 lg:mb-6">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                type="email"
-                placeholder="請輸入 Email"
-                class="input mt-2 lg:mt-[6px]"
-                required
-              />
+              <label for="email"
+                >Email
+                <input
+                  type="email"
+                  placeholder="請輸入 Email"
+                  class="input mt-2 lg:mt-[6px]"
+                  required
+                />
+              </label>
             </div>
             <div class="lg:flex lg:justify-between">
               <div class="lg:w-1/2 lg:mr-12 mb-4 lg:mb-6">
                 <label for="course">課程</label>
-                <select id="course" class="input mt-2 lg:mt-[6px]">
+                <select
+                  id="course"
+                  class="input mt-2 lg:mt-[6px] cursor-pointer"
+                >
                   <option selected value="1堂50分鐘">1堂50分鐘</option>
                   <option value="3堂50分鐘">3堂50分鐘</option>
                   <option value="10堂50分鐘">10堂50分鐘</option>
@@ -147,10 +151,10 @@ engine: ejs
                 <label for="date">想預約的日期</label>
                 <input
                   id="date"
-                  type="date"
+                  type="text"
+                  name="foo"
                   placeholder="請選擇日期"
-                  class="input mt-2 lg:mt-[6px]"
-                  required
+                  class="input mt-2 lg:mt-[6px] cursor-pointer"
                 />
               </div>
             </div>

@@ -71,3 +71,10 @@ const toggleLoginModal = () => {
     body.style.overflow = "auto";
   }
 };
+
+// vanillajs-datepicker
+const elem = document.querySelector('input[name="foo"]');
+const datepicker = new Datepicker(elem, {
+  autohide: true,
+  format: "yyyy/mm/dd",
+});
