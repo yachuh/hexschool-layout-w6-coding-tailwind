@@ -63,5 +63,12 @@ var toggleLoginModal = function toggleLoginModal() {
     // Enable scroll
     body.style.overflow = "auto";
   }
-};
+}; // vanillajs-datepicker
+
+
+var elem = document.querySelector('input[name="foo"]');
+var datepicker = new Datepicker(elem, {
+  autohide: true,
+  format: "yyyy/mm/dd"
+});
 //# sourceMappingURL=all.js.map
