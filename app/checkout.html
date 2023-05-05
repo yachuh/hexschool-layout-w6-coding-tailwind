@@ -1,0 +1,178 @@
+---
+title: 課程報名
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<main class="bg-black">
+  <div class="lg:bg-dark-primary">
+    <div class="container">
+      <ul
+        class="mx-auto w-full lg:w-8/12 flex justify-around items-center py-6 lg:pt-6 lg:pb-4"
+      >
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+          >
+            <span class="material-icons text-xs align-bottom">check</span>
+          </div>
+          <p class="text-primary mt-1">課程報名</p>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-dark-secondary rounded-full ring-1 ring-dark-border flex items-center justify-center"
+          >
+            <span class="text-xs align-bottom text-white">2</span>
+          </div>
+          <p class="text-dark-border mt-1">信用卡付款</p>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-dark-secondary rounded-full ring-1 ring-dark-border flex items-center justify-center"
+          >
+            <span class="text-xs align-bottom text-white">3</span>
+          </div>
+          <p class="text-dark-border mt-1">付款成功</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="container mt-6 lg:mt-12 lg:flex lg:justify-center lg:items-center"
+  >
+    <!-- 課程資訊 -->
+    <div
+      class="relative w-full lg:w-1/3 bg-dark-secondary text-center p-6 lg:px-8 lg:py-12 after:absolute after:top-[100%] lg:after:top-[50%] after:left-[50%] lg:after:left-[100%] after:w-0 after:h-0 after:border-[12px] after:border-b-0 lg:after:border-b-[12px] lg:after:border-r-0 after:border-transparent after:border-t-dark-secondary lg:after:border-t-transparent lg:after:border-l-dark-secondary lg:-mr-[43px]"
+    >
+      <img
+        src="./assets/images/teacher01.jpg"
+        alt="teacher"
+        class="ring ring-primary rounded-full w-[100px] h-[100px] mx-auto mb-4 lg:mb-6"
+      />
+      <h2 class="font-bold mb-1">2022 Python 全攻略｜從入門到實務</h2>
+      <p class="text-primary mb-1">前端語言</p>
+      <p class="text-left">
+        帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的
+        HTML 語法出發。
+      </p>
+    </div>
+    <!-- 課程報名 -->
+    <div
+      class="bg-dark-primary w-full lg:w-3/4 p-6 lg:py-12 lg:pl-[114px] lg:pr-8 mt-11 lg:mt-0 mb-11 lg:mb-[144px]"
+    >
+      <!-- 選擇付款方式 -->
+      <div>
+        <form action="">
+          <h3 class="text-2xl text-center font-bold mb-6 lg:mb-12">課程報名</h3>
+          <!-- 選擇付款方式 -->
+          <div class="mb-8">
+            <h4
+              class="text-md text-center lg:text-left font-bold mb-4 lg:mb-[6px]"
+            >
+              選擇付款方式
+            </h4>
+            <ul
+              class="flex flex-wrap justify-center lg:justify-start items-center gap-2 lg:gap-y-4"
+            >
+              <li
+                class="btn btn-outline ring-primary text-primary px-0 py-4 text-center w-[48%] lg:w-fit lg:px-8"
+              >
+                信用卡付款
+              </li>
+              <li
+                class="btn btn-outline px-0 py-4 text-center w-[48%] lg:w-fit lg:px-8"
+              >
+                超商繳款
+              </li>
+              <li
+                class="btn btn-outline px-0 py-4 text-center w-[48%] lg:w-fit lg:px-8"
+              >
+                ATM轉帳
+              </li>
+              <li
+                class="btn btn-outline px-0 py-4 text-center w-[48%] lg:w-fit lg:px-8"
+              >
+                12期分期付款
+              </li>
+            </ul>
+          </div>
+          <!-- 訂單資訊 -->
+          <h4 class="text-md text-center lg:text-left font-bold mb-4 lg:mb-6">
+            訂單資訊
+          </h4>
+          <div class="text-dark-border">
+            <div class="lg:flex lg:justify-between">
+              <div class="lg:w-1/2 lg:mr-12 mb-4 lg:mb-6">
+                <label for="name">姓名</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="請輸入姓名"
+                  class="input mt-2 lg:mt-[6px]"
+                  required
+                />
+              </div>
+              <div class="lg:w-1/2 mb-4 lg:mb-6">
+                <label for="phone">電話</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="請輸入電話號碼"
+                  class="input mt-2 lg:mt-[6px]"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-4 lg:mb-6">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="請輸入 Email"
+                class="input mt-2 lg:mt-[6px]"
+                required
+              />
+            </div>
+            <div class="lg:flex lg:justify-between">
+              <div class="lg:w-1/2 lg:mr-12 mb-4 lg:mb-6">
+                <label for="course">課程</label>
+                <select id="course" class="input mt-2 lg:mt-[6px]">
+                  <option selected value="1堂50分鐘">1堂50分鐘</option>
+                  <option value="3堂50分鐘">3堂50分鐘</option>
+                  <option value="10堂50分鐘">10堂50分鐘</option>
+                  <option value="20堂50分鐘">20堂50分鐘</option>
+                </select>
+              </div>
+              <div class="lg:w-1/2 mb-4 lg:mb-6">
+                <label for="date">想預約的日期</label>
+                <input
+                  id="date"
+                  type="date"
+                  placeholder="請選擇日期"
+                  class="input mt-2 lg:mt-[6px]"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label for="address">上課地點</label>
+              <input
+                id="address"
+                type="text"
+                placeholder="請輸入上課地點"
+                class="input mt-2 lg:mt-[6px]"
+                required
+              />
+            </div>
+            <div
+              class="mt-6 lg:flex lg:justify-between lg:items-center text-white"
+            >
+              <p class="text-md font-azeret mb-6 lg:mb-0">NT 1600</p>
+              <a href="" class="btn btn-gradient">前往結賬</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
