@@ -54,6 +54,10 @@
     -webkit-background-clip: text;
   }
 
+  .navbar-gradient {
+    background: linear-gradient(90deg, #09acf5 50%, #62db54 50%);
+  }
+
   .absoluteCenter {
     position: absolute;
     left: 50%;
