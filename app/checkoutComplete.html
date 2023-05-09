@@ -1,0 +1,66 @@
+---
+title: 課程報名 - 完成訂購
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<main class="bg-black">
+  <!-- Checkout Progress bar -->
+  <div class="lg:bg-dark-primary">
+    <div class="container">
+      <ul
+        class="z-0 mx-auto w-full lg:w-8/12 flex justify-between items-center py-6 lg:pt-6 lg:pb-4 relative after:absolute after:-z-[1] after:top-[32px] after:left-[22px] after:right-0 after:w-[calc(100%-44px)] after:h-[2px] after:bg-primary"
+      >
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-primary rounded-full ring-1 ring-primary flex items-center justify-center z-10"
+          >
+            <span class="material-icons text-xs align-bottom">check</span>
+          </div>
+          <p class="text-primary mt-1">課程報名</p>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-primary rounded-full ring-1 ring-primary flex items-center justify-center"
+          >
+            <span class="material-icons text-xs align-bottom text-white"
+              >check</span
+            >
+          </div>
+          <p class="text-primary mt-1">信用卡付款</p>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-primary rounded-full ring-1 ring-primary flex items-center justify-center"
+          >
+            <span class="material-icons text-xs align-bottom text-white"
+              >check</span
+            >
+          </div>
+          <p class="text-primary mt-1">付款成功</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Complete Dialog -->
+  <div class="bg-black pt-3 lg:pt-12 pb-10 lg:pb-20 min-h-screen">
+    <div class="container">
+      <div
+        class="bg-dark-primary mx-auto w-full lg:w-4/12 p-6 lg:py-12 lg:px-8 text-center"
+      >
+        <h2
+          class="text-2xl text-center font-bold mb-6 lg:mb-12 flex items-center justify-center"
+        >
+          <span class="material-icons-outlined text-primary text-[48px] mr-4"
+            >verified</span
+          >完成訂購
+        </h2>
+        <p class="text-left mb-6 lg:mb-8">
+          恭喜您已完成「2022 Python
+          全攻略｜從入門到實務」課程報名，請注意郵件訊息，家教老師將與您聯繫！
+        </p>
+        <a href="course.html" class="btn btn-gradient px-12">看看其他課程</a>
+      </div>
+    </div>
+  </div>
+</main>
