@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>課程介紹</title>
+    <title>課程報名 - 信用卡付款</title>
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -183,173 +183,96 @@
     </header>
 
     
-<main class="bg-dark-primary">
-  <div class="container lg:w-10/12 pt-10 lg:pt-[42px]">
-    <div class="flex gap-x-4 items-center overflow-x-auto">
-      <a
-        href="#"
-        class="btn btn-outline ring-primary text-primary py-4 flex-grow min-w-fit lg:flex-grow-0"
-        >所有課程</a
+<main class="bg-black">
+  <!-- Checkout Progress bar -->
+  <div class="lg:bg-dark-primary">
+    <div class="container">
+      <ul
+        class="z-0 mx-auto w-full lg:w-8/12 flex justify-between items-center py-6 lg:pt-6 lg:pb-4 relative after:absolute after:-z-[1] after:top-[32px] after:left-[32px] after:right-0 after:w-[calc(50%-22px)] after:h-[2px] after:bg-primary before:absolute before:-z-[1] before:top-[32px] before:left-[50%] before:w-[calc(50%-22px)] before:h-[2px] before:bg-dark-border"
       >
-      <a
-        href="#"
-        class="btn btn-outline py-4 flex-grow min-w-fit lg:flex-grow-0"
-        >行動應用開發</a
-      >
-      <a
-        href="#"
-        class="btn btn-outline py-4 flex-grow min-w-fit lg:flex-grow-0"
-        >資料庫/資料科學</a
-      >
-      <a
-        href="#"
-        class="btn btn-outline py-4 flex-grow min-w-fit lg:flex-grow-0"
-        >前端語言</a
-      >
-      <a
-        href="#"
-        class="btn btn-outline py-4 flex-grow min-w-fit lg:flex-grow-0"
-        >後端語言</a
-      >
-      <a
-        href="#"
-        class="btn btn-outline py-4 flex-grow min-w-fit lg:flex-grow-0"
-        >作業系統與伺服器</a
-      >
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-primary rounded-full ring-1 ring-primary flex items-center justify-center z-10"
+          >
+            <span class="material-icons text-xs align-bottom">check</span>
+          </div>
+          <p class="text-primary mt-1">課程報名</p>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-primary rounded-full ring-1 ring-primary flex items-center justify-center"
+          >
+            <span class="text-xs align-bottom text-white">2</span>
+          </div>
+          <p class="text-primary mt-1">信用卡付款</p>
+        </li>
+        <li class="flex flex-col justify-center items-center">
+          <div
+            class="w-5 h-5 bg-dark-secondary rounded-full ring-1 ring-dark-border flex items-center justify-center"
+          >
+            <span class="text-xs align-bottom text-white">3</span>
+          </div>
+          <p class="text-dark-border mt-1">付款成功</p>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="container lg:w-10/12 pt-6 lg:pt-12">
-    <ul class="flex flex-col gap-y-6 lg:gap-y-8">
-      <li
-        class="bg-dark-secondary rounded-3xl px-6 py-8 lg:p-12 flex flex-col lg:flex-row justify-center"
+  <!-- Creditcard form -->
+  <div class="bg-black pt-3 lg:pt-12 pb-10 lg:pb-20">
+    <div class="container">
+      <div
+        class="bg-dark-primary mx-auto w-full lg:w-4/12 p-6 lg:py-12 lg:px-8"
       >
-        <div class="text-center mb-6 lg:mb-0 mx-auto lg:flex-shrink-0">
-          <img
-            src="./assets/images/teacher01.jpg"
-            alt="teacher"
-            class="h-[100px] w-[100px] rounded-full mb-2"
-          />
-          <p>Belinda</p>
-        </div>
-        <div class="text-left lg:ml-12 lg:mr-[88px]">
-          <h2 class="text-2xl font-bold mb-1">基礎前端 - HTML</h2>
-          <p class="text-primary mb-2">前端語言</p>
-          <p>
-            帶領無基礎的平民老百姓，從最基礎的 HTML
-            語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。
-          </p>
-        </div>
-        <div class="text-center lg:ml-auto mt-12 lg:mt-0">
-          <p>
-            50 分鐘<span class="font-azeret text-4xl lg:block ml-2 lg:ml-0"
-              >NT$1600</span
-            >
-          </p>
-          <div class="flex justify-center gap-2 mt-4 lg:flex-col">
-            <a href="courseDetail.html" class="btn btn-outline">課程介紹</a>
-            <a href="checkout.html" class="btn btn-gradient">立即預約</a>
-          </div>
-        </div>
-      </li>
-      <li
-        class="bg-dark-secondary rounded-3xl px-6 py-8 lg:p-12 flex flex-col lg:flex-row justify-center"
-      >
-        <div class="text-center mb-6 lg:mb-0 mx-auto lg:flex-shrink-0">
-          <img
-            src="./assets/images/teacher02.jpg"
-            alt="teacher"
-            class="h-[100px] w-[100px] rounded-full mb-2"
-          />
-          <p>Guava</p>
-        </div>
-        <div class="text-left lg:ml-12 lg:mr-[88px]">
-          <h2 class="text-2xl font-bold mb-1">
-            2022 Python 全攻略｜從入門到實務
+        <form action="">
+          <h2 class="text-2xl text-center font-bold mb-6 lg:mb-12">
+            信用卡付款
           </h2>
-          <p class="text-primary mb-2">後端語言</p>
-          <p>
-            Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本堂課帶你無痛入門，開發簡單的應用！
-          </p>
-        </div>
-        <div class="text-center lg:ml-auto mt-12 lg:mt-0">
-          <p>
-            50 分鐘<span class="font-azeret text-4xl lg:block ml-2 lg:ml-0"
-              >NT$2000</span
-            >
-          </p>
-          <div class="flex justify-center gap-2 mt-4 lg:flex-col">
-            <a href="courseDetail.html" class="btn btn-outline">課程介紹</a>
-            <a href="checkout.html" class="btn btn-gradient">立即預約</a>
+          <h3 class="text-md text-center lg:text-left font-bold mb-4 lg:mb-6">
+            請輸入信用卡資訊進行付款
+          </h3>
+          <div class="text-dark-border">
+            <div class="mb-4 lg:mb-6">
+              <label for="cardNumber">信用卡帳號</label>
+              <input
+                id="cardNumber"
+                type="number"
+                placeholder="Xxxx-xxxx-xxxx-xxxx"
+                class="input mt-2 lg:mt-[6px]"
+                required
+              />
+            </div>
+            <div class="mb-4 lg:mb-6">
+              <label for="securityNum">安全碼</label>
+              <input
+                id="securityNum"
+                type="password"
+                placeholder="xxx"
+                class="input mt-2 lg:mt-[6px]"
+                required
+              />
+            </div>
+            <div class="mb-4 lg:mb-6">
+              <label for="expirationDate">有效日期</label>
+              <input
+                id="expirationDate"
+                type="number"
+                placeholder="(MM-YY)"
+                class="input mt-2 lg:mt-[6px]"
+                required
+              />
+            </div>
+            <div class="lg:flex lg:justify-between lg:items-center text-white">
+              <p class="text-md font-azeret mb-6 lg:mb-0">NT 1600</p>
+              <a
+                href="creditcard.html"
+                class="btn btn-gradient text-center w-full lg:w-auto lg:px-12"
+                >下一步</a
+              >
+            </div>
           </div>
-        </div>
-      </li>
-      <li
-        class="bg-dark-secondary rounded-3xl px-6 py-8 lg:p-12 flex flex-col lg:flex-row justify-center"
-      >
-        <div class="text-center mb-6 lg:mb-0 mx-auto lg:flex-shrink-0">
-          <img
-            src="./assets/images/teacher03.jpg"
-            alt="teacher"
-            class="h-[100px] w-[100px] rounded-full mb-2"
-          />
-          <p>Joe</p>
-        </div>
-        <div class="text-left lg:ml-12 lg:mr-[88px]">
-          <h2 class="text-2xl font-bold mb-1">
-            活用 Line Bot ｜APP 開發到上架完整實戰攻略
-          </h2>
-          <p class="text-primary mb-2">行動應用開發</p>
-          <p>
-            Line Bot
-            可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最合適的應答句，本堂課會帶你了解
-            Line Bot 如何結合其他工具的應用。
-          </p>
-        </div>
-        <div class="text-center lg:ml-auto mt-12 lg:mt-0">
-          <p>
-            50 分鐘<span class="font-azeret text-4xl lg:block ml-2 lg:ml-0"
-              >NT$1800</span
-            >
-          </p>
-          <div class="flex justify-center gap-2 mt-4 lg:flex-col">
-            <a href="courseDetail.html" class="btn btn-outline">課程介紹</a>
-            <a href="checkout.html" class="btn btn-gradient">立即預約</a>
-          </div>
-        </div>
-      </li>
-      <li
-        class="bg-dark-secondary rounded-3xl px-6 py-8 lg:p-12 flex flex-col lg:flex-row justify-center mb-10 lg:mb-[90px]"
-      >
-        <div class="text-center mb-6 lg:mb-0 mx-auto lg:flex-shrink-0">
-          <img
-            src="./assets/images/teacher04.jpg"
-            alt="teacher"
-            class="h-[100px] w-[100px] rounded-full mb-2"
-          />
-          <p>Lina</p>
-        </div>
-        <div class="text-left lg:ml-12 lg:mr-[88px]">
-          <h2 class="text-2xl font-bold mb-1">
-            Linux 零基礎七天入門｜入門到實務
-          </h2>
-          <p class="text-primary mb-2">作業系統與伺服器</p>
-          <p>
-            Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式語言的基本語法
-          </p>
-        </div>
-        <div class="text-center lg:ml-auto mt-12 lg:mt-0">
-          <p>
-            50 分鐘<span class="font-azeret text-4xl lg:block ml-2 lg:ml-0"
-              >NT$1100</span
-            >
-          </p>
-          <div class="flex justify-center gap-2 mt-4 lg:flex-col">
-            <a href="courseDetail.html" class="btn btn-outline">課程介紹</a>
-            <a href="checkout.html" class="btn btn-gradient">立即預約</a>
-          </div>
-        </div>
-      </li>
-    </ul>
+        </form>
+      </div>
+    </div>
   </div>
 </main>
 

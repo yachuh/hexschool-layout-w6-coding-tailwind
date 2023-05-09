@@ -71,4 +71,9 @@ var datepicker = new Datepicker(elem, {
   autohide: true,
   format: "yyyy/mm/dd"
 });
+var expirationDate = document.querySelector('input[name="expirationDate"]');
+var datepicker2 = new Datepicker(expirationDate, {
+  autohide: true,
+  format: "yyyy/mm/dd"
+});
 //# sourceMappingURL=all.js.map

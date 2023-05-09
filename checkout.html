@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>課程報名</title>
+
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -182,14 +184,15 @@
 
     
 <main class="bg-black">
+  <!-- Checkout Progress bar -->
   <div class="lg:bg-dark-primary">
     <div class="container">
       <ul
-        class="mx-auto w-full lg:w-8/12 flex justify-around items-center py-6 lg:pt-6 lg:pb-4"
+        class="z-0 mx-auto w-full lg:w-8/12 flex justify-between items-center py-6 lg:pt-6 lg:pb-4 relative after:absolute after:-z-[1] after:top-[32px] after:left-[22px] after:w-[calc(100%-44px)] after:h-[2px] after:bg-dark-border"
       >
         <li class="flex flex-col justify-center items-center">
           <div
-            class="w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+            class="w-5 h-5 bg-primary rounded-full ring-1 ring-primary flex items-center justify-center z-10"
           >
             <span class="material-icons text-xs align-bottom">check</span>
           </div>
@@ -214,6 +217,7 @@
       </ul>
     </div>
   </div>
+  <!-- Checkout Detail -->
   <div
     class="container mt-6 lg:mt-12 lg:flex lg:justify-center lg:items-center"
   >
@@ -240,7 +244,7 @@
       <!-- 選擇付款方式 -->
       <div>
         <form action="">
-          <h3 class="text-2xl text-center font-bold mb-6 lg:mb-12">課程報名</h3>
+          <h2 class="text-2xl text-center font-bold mb-6 lg:mb-12">課程報名</h2>
           <!-- 選擇付款方式 -->
           <div class="mb-8">
             <h4
@@ -274,9 +278,9 @@
             </ul>
           </div>
           <!-- 訂單資訊 -->
-          <h4 class="text-md text-center lg:text-left font-bold mb-4 lg:mb-6">
+          <h3 class="text-md text-center lg:text-left font-bold mb-4 lg:mb-6">
             訂單資訊
-          </h4>
+          </h3>
           <div class="text-dark-border">
             <div class="lg:flex lg:justify-between">
               <div class="lg:w-1/2 lg:mr-12 mb-4 lg:mb-6">
@@ -349,7 +353,7 @@
               class="mt-6 lg:flex lg:justify-between lg:items-center text-white"
             >
               <p class="text-md font-azeret mb-6 lg:mb-0">NT 1600</p>
-              <a href="" class="btn btn-gradient">前往結賬</a>
+              <a href="creditcard.html" class="btn btn-gradient">前往結賬</a>
             </div>
           </div>
         </form>
