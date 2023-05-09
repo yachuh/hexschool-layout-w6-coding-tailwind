@@ -1589,6 +1589,10 @@ select {
   content: var(--tw-content);
   left: 50%;
 }
+.before\:bottom-0::before {
+  content: var(--tw-content);
+  bottom: 0px;
+}
 .before\:-z-\[1\]::before {
   content: var(--tw-content);
   z-index: -1;
@@ -1606,6 +1610,10 @@ select {
   height: 2px;
 }
 .before\:h-px::before {
+  content: var(--tw-content);
+  height: 1px;
+}
+.before\:h-\[1px\]::before {
   content: var(--tw-content);
   height: 1px;
 }
@@ -1627,6 +1635,12 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(193 193 193 / var(--tw-bg-opacity));
 }
+.before\:navbar-gradient::before {
+    content: var(--tw-content);
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #09acf5), color-stop(50%, #62db54));
+    background: -o-linear-gradient(left, #09acf5 50%, #62db54 50%);
+    background: linear-gradient(90deg, #09acf5 50%, #62db54 50%);
+  }
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
