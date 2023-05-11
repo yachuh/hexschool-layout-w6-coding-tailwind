@@ -71,5 +71,5 @@ Checkout more at: [網頁切版直播班 Gulp 範例 - Tailwind 版本](https://
 
 ## Credit
 
-- [設計稿提供](https://xd.adobe.com/view/456141fc-d0a0-44d4-93ad-6ab54a4b5351-1032/grid)
+- [設計稿提供](https://xd.adobe.com/view/ec5c5da0-6d93-4e78-bd3b-c8e9584fde44-b90f/screen/8abe4f5e-6bcf-4391-b323-d4fb37b1509a/)
 - 課程：[六角｜網頁切版直播班](https://www.hexschool.com/courses/web-layout-training-1st.html#recommend)
