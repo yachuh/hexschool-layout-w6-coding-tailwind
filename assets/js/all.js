@@ -1,19 +1,11 @@
 "use strict";
 
-console.log("Hello!");
-$(document).ready(function () {
-  console.log("HesSchool Hello!");
-}); // toggle mobile nav menu
-
+//=== toggle mobile nav menu ===//
 var navBtn = document.querySelector("#navMobileBtn");
 var navMobileMenu = document.querySelector("#navMobileMenu");
 navBtn.addEventListener("click", function () {
   navMobileMenu.classList.toggle("hidden");
 }); //=== Swiper ====//
-// // import Swiper bundle with all modules installed
-// import Swiper from "swiper-bundle";
-// // import styles bundle
-// import "swiper/css/bundle";
 // Initialize swiper
 
 var swiper = new Swiper(".course-swiper", {
@@ -46,7 +38,7 @@ var swiperCustomer = new Swiper(".review-swiper", {
     el: ".swiper-pagination",
     clickable: true
   }
-}); // login Modal
+}); //=== login Modal ===//
 
 var loginModal = document.getElementById("loginModal");
 var loginBtn = document.getElementById("btn-login");
@@ -63,17 +55,16 @@ var toggleLoginModal = function toggleLoginModal() {
     // Enable scroll
     body.style.overflow = "auto";
   }
-}; // vanillajs-datepicker
+}; //=== vanillajs-datepicker ===//
 
 
 var elem = document.querySelector('input[name="foo"]');
 var datepicker = new Datepicker(elem, {
   autohide: true,
-  format: "yyyy/mm/dd"
-});
-var expirationDate = document.querySelector('input[name="expirationDate"]');
-var datepicker2 = new Datepicker(expirationDate, {
-  autohide: true,
-  format: "yyyy/mm/dd"
-});
+  format: "yyyy/mm/dd",
+  language: "zh-TW",
+  todayHighlight: "true"
+}); //=== AOS animation ===//
+
+AOS.init();
 //# sourceMappingURL=all.js.map
