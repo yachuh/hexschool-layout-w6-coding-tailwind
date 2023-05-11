@@ -1,10 +1,4 @@
-console.log("Hello!");
-
-$(document).ready(() => {
-  console.log("HesSchool Hello!");
-});
-
-// toggle mobile nav menu
+//=== toggle mobile nav menu ===//
 const navBtn = document.querySelector("#navMobileBtn");
 const navMobileMenu = document.querySelector("#navMobileMenu");
 
@@ -13,12 +7,6 @@ navBtn.addEventListener("click", () => {
 });
 
 //=== Swiper ====//
-// // import Swiper bundle with all modules installed
-// import Swiper from "swiper-bundle";
-
-// // import styles bundle
-// import "swiper/css/bundle";
-
 // Initialize swiper
 const swiper = new Swiper(".course-swiper", {
   autoplay: {
@@ -53,7 +41,7 @@ const swiperCustomer = new Swiper(".review-swiper", {
   },
 });
 
-// login Modal
+//=== login Modal ===//
 const loginModal = document.getElementById("loginModal");
 const loginBtn = document.getElementById("btn-login");
 const closeBtn = document.getElementById("btn-close");
@@ -72,15 +60,14 @@ const toggleLoginModal = () => {
   }
 };
 
-// vanillajs-datepicker
+//=== vanillajs-datepicker ===//
 const elem = document.querySelector('input[name="foo"]');
 const datepicker = new Datepicker(elem, {
   autohide: true,
   format: "yyyy/mm/dd",
+  language: "zh-TW",
+  todayHighlight: "true",
 });
 
-const expirationDate = document.querySelector('input[name="expirationDate"]');
-const datepicker2 = new Datepicker(expirationDate, {
-  autohide: true,
-  format: "yyyy/mm/dd",
-});
+//=== AOS animation ===//
+AOS.init();
